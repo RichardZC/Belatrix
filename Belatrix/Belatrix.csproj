@@ -1,0 +1,496 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2A9FE7E9-1404-472D-8E49-1962F029A50E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Belatrix</RootNamespace>
+    <AssemblyName>Belatrix</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="img\3-column-digital-creativity.png" />
+    <Content Include="img\3-column-van-surf.png" />
+    <Content Include="img\3-column-wishy.png" />
+    <Content Include="Web.config" />
+    <Content Include="wp-content\plugins\karma-style-switcher\images\toggle-button.png" />
+    <Content Include="wp-content\plugins\karma-style-switcher\js\jquery-ui-1.10.1.custom.min7e2e.js" />
+    <Content Include="wp-content\plugins\karma-style-switcher\js\style-switcher7e2e.js" />
+    <Content Include="wp-content\plugins\karma-style-switcher\style-switcher62ea.css" />
+    <Content Include="wp-content\plugins\LayerSlider\static\css\blank.gif" />
+    <Content Include="wp-content\plugins\LayerSlider\static\css\layerslider972f.css" />
+    <Content Include="wp-content\plugins\LayerSlider\static\img\blank.gif" />
+    <Content Include="wp-content\plugins\LayerSlider\static\js\greensock4a80.js" />
+    <Content Include="wp-content\plugins\LayerSlider\static\js\layerslider.kreaturamedia.jquery972f.js" />
+    <Content Include="wp-content\plugins\LayerSlider\static\js\layerslider.transitions972f.js" />
+    <Content Include="wp-content\plugins\revslider\images\transparent.png" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\assets\arrowleft.png" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\assets\arrowright.png" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\assets\arrow_left.png" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\assets\arrow_left2.png" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\assets\arrow_right.png" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\assets\arrow_right2.png" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\assets\boxed_bgtile.png" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\assets\bullet.png" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\assets\bullets.png" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\assets\bullets2.png" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\assets\bullet_boxed.png" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\assets\coloredbg.png" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\assets\gridtile.png" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\assets\gridtile_3x3.png" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\assets\gridtile_3x3_white.png" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\assets\gridtile_white.png" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\assets\large_left.png" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\assets\large_right.png" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\assets\loader.gif" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\assets\navigdots.png" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\assets\navigdots_bgtile.png" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\assets\shadow1.png" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\assets\shadow2.png" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\assets\shadow3.png" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\assets\small_left.png" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\assets\small_left_boxed.png" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\assets\small_right.png" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\assets\small_right_boxed.png" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\assets\timer.png" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\css\dynamic-captions6ee0.css" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\css\settings6ee0.css" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\css\static-captions6ee0.css" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\font\revicons90c6.svg" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\images\gradient\g30.png" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\images\gradient\g40.png" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\js\jquery.themepunch.plugins.min8a1f.js" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\js\jquery.themepunch.revolution.min8a1f.js" />
+    <Content Include="wp-content\plugins\woocommerce\assets\css\chosen7e2e.css" />
+    <Content Include="wp-content\plugins\woocommerce\assets\css\prettyPhoto7e2e.css" />
+    <Content Include="wp-content\plugins\woocommerce\assets\fonts\WooCommerce.svg" />
+    <Content Include="wp-content\plugins\woocommerce\assets\images\ajax-loader.gif" />
+    <Content Include="wp-content\plugins\woocommerce\assets\images\chosen-sprite%402x.png" />
+    <Content Include="wp-content\plugins\woocommerce\assets\images\chosen-sprite.png" />
+    <Content Include="wp-content\plugins\woocommerce\assets\js\chosen\chosen.jquery.min8a54.js" />
+    <Content Include="wp-content\plugins\woocommerce\assets\js\frontend\add-to-cart.min4c71.js" />
+    <Content Include="wp-content\plugins\woocommerce\assets\js\frontend\cart-fragments.min4c71.js" />
+    <Content Include="wp-content\plugins\woocommerce\assets\js\frontend\cart.min4c71.js" />
+    <Content Include="wp-content\plugins\woocommerce\assets\js\frontend\chosen-frontend.min4c71.js" />
+    <Content Include="wp-content\plugins\woocommerce\assets\js\frontend\country-select.min4c71.js" />
+    <Content Include="wp-content\plugins\woocommerce\assets\js\frontend\single-product.min4c71.js" />
+    <Content Include="wp-content\plugins\woocommerce\assets\js\frontend\woocommerce.min4c71.js" />
+    <Content Include="wp-content\plugins\woocommerce\assets\js\jquery-blockui\jquery.blockUI.minc8cb.js" />
+    <Content Include="wp-content\plugins\woocommerce\assets\js\jquery-cookie\jquery.cookie.mine7f0.js" />
+    <Content Include="wp-content\plugins\woocommerce\assets\js\prettyPhoto\jquery.prettyPhoto.init.min4c71.js" />
+    <Content Include="wp-content\plugins\woocommerce\assets\js\prettyPhoto\jquery.prettyPhoto.minc6bd.js" />
+    <Content Include="wp-content\themes\images\shadow-bottom-left.html" />
+    <Content Include="wp-content\themes\images\shadow-bottom-right.html" />
+    <Content Include="wp-content\themes\images\shadow-bottom.html" />
+    <Content Include="wp-content\themes\images\shadow-left.html" />
+    <Content Include="wp-content\themes\images\shadow-right.html" />
+    <Content Include="wp-content\themes\images\shadow-top-left.html" />
+    <Content Include="wp-content\themes\images\shadow-top-right.html" />
+    <Content Include="wp-content\themes\images\shadow-top.html" />
+    <Content Include="wp-content\themes\Karma\css\fonts\fontawesome-webfontba72.html" />
+    <Content Include="wp-content\themes\Karma\css\fonts\fontawesome-webfontba72.svg" />
+    <Content Include="wp-content\themes\Karma\css\karma-grey.css" />
+    <Content Include="wp-content\themes\Karma\css\karma-political-blue7e2e.css" />
+    <Content Include="wp-content\themes\Karma\css\karma-tuf-green.css" />
+    <Content Include="wp-content\themes\Karma\css\secondary-cherry.css" />
+    <Content Include="wp-content\themes\Karma\css\secondary-political-blue7e2e.css" />
+    <Content Include="wp-content\themes\Karma\css\secondary-tuf-green.css" />
+    <Content Include="wp-content\themes\Karma\css\_font-awesome7e2e.css" />
+    <Content Include="wp-content\themes\Karma\css\_mobile7e2e.css" />
+    <Content Include="wp-content\themes\Karma\css\_woocommerce7e2e.css" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\body-bg-classy-fabric.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\body-bg-connect.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\body-bg-dark-wall.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\body-bg-darkdenim3.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\body-bg-escheresque.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\body-bg-gplaypattern.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\body-bg-grey-subtle-noise.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\body-bg-grey.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\body-bg-grid.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\body-bg-grid_noise.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\body-bg-hexellence.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\body-bg-lghtmesh.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\body-bg-low-contrast-linen.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\body-bg-noise_lines.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\body-bg-noisy_grid.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\body-bg-pinstriped_suit.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\body-bg-rough_diagonal.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\body-bg-shattered.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\body-bg-subtle_dots.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\body-bg-tiny_grid.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\karma-alpha-green.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\karma-autumn.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\karma-blue-grey.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\karma-buoy-red.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\karma-cherry.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\karma-coffee.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\karma-cool-blue.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\karma-dark.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\karma-fire.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\karma-forest-green.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\karma-french-green.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\karma-golden.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\karma-grey.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\karma-lime-green.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\karma-orange.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\karma-periwinkle.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\karma-pink.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\karma-political-blue.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\karma-purple.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\karma-royal-blue.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\karma-silver.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\karma-sky-blue.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\karma-steel-green.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\karma-teal-grey.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\karma-teal.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\karma-tuf-green.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\karma-vista-blue.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\karma-yogi-green.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\overlay-abstract.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\overlay-bokeh.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\overlay-diagonal.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\overlay-halftone.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\overlay-none.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\overlay-paisley.png" />
+    <Content Include="wp-content\themes\Karma\framework\admin\images\site-option-images\overlay-stars.png" />
+    <Content Include="wp-content\themes\Karma\images\ajax-loader.html" />
+    <Content Include="wp-content\themes\Karma\images\cross_white.html" />
+    <Content Include="wp-content\themes\Karma\images\skins\bg-footer-bottom-grey.png" />
+    <Content Include="wp-content\themes\Karma\images\skins\bg-footer-bottom-political-blue.png" />
+    <Content Include="wp-content\themes\Karma\images\skins\bg-footer-bottom-tuf-green.png" />
+    <Content Include="wp-content\themes\Karma\images\skins\secondary-cherry\bg-jquery-bnr.png" />
+    <Content Include="wp-content\themes\Karma\images\skins\secondary-cherry\bg-tools-b.png" />
+    <Content Include="wp-content\themes\Karma\images\skins\secondary-cherry\bg-tools-c.png" />
+    <Content Include="wp-content\themes\Karma\images\skins\secondary-cherry\bg-tools-t.png" />
+    <Content Include="wp-content\themes\Karma\images\skins\secondary-cherry\sprite.png" />
+    <Content Include="wp-content\themes\Karma\images\skins\secondary-political-blue\bg-jquery-bnr.png" />
+    <Content Include="wp-content\themes\Karma\images\skins\secondary-political-blue\bg-tools-b.png" />
+    <Content Include="wp-content\themes\Karma\images\skins\secondary-political-blue\bg-tools-c.png" />
+    <Content Include="wp-content\themes\Karma\images\skins\secondary-political-blue\bg-tools-t.png" />
+    <Content Include="wp-content\themes\Karma\images\skins\secondary-political-blue\sprite.png" />
+    <Content Include="wp-content\themes\Karma\images\skins\secondary-tuf-green\bg-jquery-bnr.png" />
+    <Content Include="wp-content\themes\Karma\images\skins\secondary-tuf-green\bg-tools-b.png" />
+    <Content Include="wp-content\themes\Karma\images\skins\secondary-tuf-green\bg-tools-c.png" />
+    <Content Include="wp-content\themes\Karma\images\skins\secondary-tuf-green\bg-tools-t.png" />
+    <Content Include="wp-content\themes\Karma\images\skins\secondary-tuf-green\sprite.png" />
+    <Content Include="wp-content\themes\Karma\images\success.html" />
+    <Content Include="wp-content\themes\Karma\images\woocommerce\bg-tabs-panel.png" />
+    <Content Include="wp-content\themes\Karma\images\woocommerce\cart-totals.png" />
+    <Content Include="wp-content\themes\Karma\images\woocommerce\star.png" />
+    <Content Include="wp-content\themes\Karma\images\woocommerce\success.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\404_error.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\bg-div-footer-top.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\bg-div-main.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\bg-divider-shadow.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\bg-sidebar-white.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\bg-sidebar.gif" />
+    <Content Include="wp-content\themes\Karma\images\_global\bg-sidebar.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\bg-slider-jquery-2.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\bg-smartphone.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\bg-video.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\global-sprite.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\image-frame-portrait-modern.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\image-frame-portrait-shadow.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\image-frame-single-shadow.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\image-frame-single.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\image-frame-sprite.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\loader-default.gif" />
+    <Content Include="wp-content\themes\Karma\images\_global\loader-grey.gif" />
+    <Content Include="wp-content\themes\Karma\images\_global\loader-mobile.gif" />
+    <Content Include="wp-content\themes\Karma\images\_global\loader-steel.gif" />
+    <Content Include="wp-content\themes\Karma\images\_global\loader-tan.gif" />
+    <Content Include="wp-content\themes\Karma\images\_global\loader-trans.gif" />
+    <Content Include="wp-content\themes\Karma\images\_global\preload-white.html" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettyPhoto\dark_rounded\btnNext.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettyPhoto\dark_rounded\btnPrevious.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettyPhoto\dark_rounded\contentPattern.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettyPhoto\dark_rounded\loader.gif" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettyPhoto\dark_rounded\sprite.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettyPhoto\dark_square\btnNext.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettyPhoto\dark_square\btnPrevious.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettyPhoto\dark_square\loader.gif" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettyPhoto\dark_square\sprite.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettyPhoto\default\default_thumb.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettyPhoto\default\loader.gif" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettyPhoto\default\sprite.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettyPhoto\default\sprite_next.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettyPhoto\default\sprite_prev.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettyPhoto\default\sprite_x.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettyPhoto\default\sprite_y.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettyPhoto\facebook\btnNext.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettyPhoto\facebook\btnPrevious.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettyPhoto\facebook\contentPatternBottom.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettyPhoto\facebook\contentPatternLeft.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettyPhoto\facebook\contentPatternRight.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettyPhoto\facebook\contentPatternTop.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettyPhoto\facebook\default_thumbnail.gif" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettyPhoto\facebook\loader.gif" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettyPhoto\facebook\sprite.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettyPhoto\light_rounded\btnNext.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettyPhoto\light_rounded\btnPrevious.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettyPhoto\light_rounded\loader.gif" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettyPhoto\light_rounded\sprite.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettyPhoto\light_square\btnNext.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettyPhoto\light_square\btnPrevious.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettyPhoto\light_square\sprite.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettySociable\backgrounds\bl.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettySociable\backgrounds\br.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettySociable\backgrounds\cl.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettySociable\backgrounds\cr.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettySociable\backgrounds\tl.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettySociable\backgrounds\tr.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettySociable\backgrounds\trans\bl.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettySociable\backgrounds\trans\br.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettySociable\backgrounds\trans\cl.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettySociable\backgrounds\trans\cr.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettySociable\backgrounds\trans\tl.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettySociable\backgrounds\trans\tr.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettySociable\backgrounds\tt_l.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\prettySociable\backgrounds\tt_r.png" />
+    <Content Include="wp-content\themes\Karma\images\_global\shadowBG-full.jpg" />
+    <Content Include="wp-content\themes\Karma\js\custom-mainf9b8.js" />
+    <Content Include="wp-content\themes\Karma\js\custom-woocommerce7e2e.js" />
+    <Content Include="wp-content\themes\Karma\js\jquery.fitvidsf9b8.js" />
+    <Content Include="wp-content\themes\Karma\js\jquery.flexsliderf9b8.js" />
+    <Content Include="wp-content\themes\Karma\js\jquery.isotopef9b8.js" />
+    <Content Include="wp-content\themes\Karma\js\jquery.prettyPhotof9b8.js" />
+    <Content Include="wp-content\themes\Karma\js\superfishf9b8.js" />
+    <Content Include="wp-content\themes\Karma\style7e2e.css" />
+    <Content Include="wp-content\uploads\2013\12\responsive-wordpress.png" />
+    <Content Include="wp-content\uploads\blog-blue-dancer-538x218.png" />
+    <Content Include="wp-content\uploads\blog-digital-creativity-190x111.png" />
+    <Content Include="wp-content\uploads\blog-digital-creativity-202x113.png" />
+    <Content Include="wp-content\uploads\blog-digital-creativity-275x145.png" />
+    <Content Include="wp-content\uploads\blog-digital-creativity-437x234.png" />
+    <Content Include="wp-content\uploads\blog-digital-creativity-538x218.png" />
+    <Content Include="wp-content\uploads\blog-digital-creativity-65x65.png" />
+    <Content Include="wp-content\uploads\blog-make-a-wish-190x111.png" />
+    <Content Include="wp-content\uploads\blog-make-a-wish-202x113.png" />
+    <Content Include="wp-content\uploads\blog-make-a-wish-275x145.png" />
+    <Content Include="wp-content\uploads\blog-make-a-wish-65x65.png" />
+    <Content Include="wp-content\uploads\blog-make-a-wish.png" />
+    <Content Include="wp-content\uploads\blog-master-bedroom-190x111.png" />
+    <Content Include="wp-content\uploads\blog-master-bedroom-538x218.png" />
+    <Content Include="wp-content\uploads\blog-palm-van1-190x111.png" />
+    <Content Include="wp-content\uploads\blog-palm-van1-202x113.png" />
+    <Content Include="wp-content\uploads\blog-palm-van1-275x145.png" />
+    <Content Include="wp-content\uploads\blog-palm-van1-437x234.png" />
+    <Content Include="wp-content\uploads\blog-palm-van1-538x218.png" />
+    <Content Include="wp-content\uploads\blog-palm-van1-65x65.png" />
+    <Content Include="wp-content\uploads\favicon.ico" />
+    <Content Include="wp-content\uploads\revslider\sliderpreview\apple.png" />
+    <Content Include="wp-content\uploads\revslider\sliderpreview\clock2.png" />
+    <Content Include="wp-content\uploads\revslider\sliderpreview\cloud1.png" />
+    <Content Include="wp-content\uploads\revslider\sliderpreview\cloud2.png" />
+    <Content Include="wp-content\uploads\revslider\sliderpreview\cloud3.png" />
+    <Content Include="wp-content\uploads\revslider\sliderpreview\darkblurbg.jpg" />
+    <Content Include="wp-content\uploads\revslider\sliderpreview\graph.png" />
+    <Content Include="wp-content\uploads\revslider\sliderpreview\guy1.png" />
+    <Content Include="wp-content\uploads\revslider\sliderpreview\guy2.png" />
+    <Content Include="wp-content\uploads\revslider\sliderpreview\guy3.png" />
+    <Content Include="wp-content\uploads\revslider\sliderpreview\guy4.png" />
+    <Content Include="wp-content\uploads\revslider\sliderpreview\hill1.png" />
+    <Content Include="wp-content\uploads\revslider\sliderpreview\hill2.png" />
+    <Content Include="wp-content\uploads\revslider\sliderpreview\hill3.png" />
+    <Content Include="wp-content\uploads\revslider\sliderpreview\hill4.png" />
+    <Content Include="wp-content\uploads\revslider\sliderpreview\icon_photo.png" />
+    <Content Include="wp-content\uploads\revslider\sliderpreview\imac1.png" />
+    <Content Include="wp-content\uploads\revslider\sliderpreview\lupe_imac.png" />
+    <Content Include="wp-content\uploads\revslider\sliderpreview\lupe_macbook.png" />
+    <Content Include="wp-content\uploads\revslider\sliderpreview\macbook2.png" />
+    <Content Include="wp-content\uploads\revslider\sliderpreview\slidebg1.jpg" />
+    <Content Include="wp-content\uploads\revslider\sliderpreview\star.png" />
+    <Content Include="wp-content\uploads\revslider\sliderpreview\tree.png" />
+    <Content Include="wp-content\uploads\revslider\sliderpreview\videobg1.jpg" />
+    <Content Include="wp-content\uploads\revslider\sliderpreview\videoshadow.png" />
+    <Content Include="wp-content\uploads\revslider\sliderpreview\woman.png" />
+    <Content Include="wp-content\uploads\woocommerce-headphones-mp3-150x150.png" />
+    <Content Include="wp-content\uploads\woocommerce-headphones-mp3-300x300.png" />
+    <Content Include="wp-content\uploads\woocommerce-headphones-mp3.png" />
+    <Content Include="wp-content\uploads\woocommerce-keyboard-mouse-150x150.png" />
+    <Content Include="wp-content\uploads\woocommerce-keyboard-mouse-300x300.png" />
+    <Content Include="wp-content\uploads\woocommerce-keyboard-mouse.png" />
+    <Content Include="wp-content\uploads\woocommerce-laptop-150x150.png" />
+    <Content Include="wp-content\uploads\woocommerce-laptop-2-150x150.png" />
+    <Content Include="wp-content\uploads\woocommerce-laptop-2-300x300.png" />
+    <Content Include="wp-content\uploads\woocommerce-laptop-2.png" />
+    <Content Include="wp-content\uploads\woocommerce-laptop-300x300.png" />
+    <Content Include="wp-content\uploads\woocommerce-laptop.png" />
+    <Content Include="wp-content\uploads\woocommerce-mp3-player-150x150.png" />
+    <Content Include="wp-content\uploads\woocommerce-mp3-player-300x300.png" />
+    <Content Include="wp-content\uploads\woocommerce-mp3-player.png" />
+    <Content Include="wp-content\uploads\woocommerce-speakers-150x150.png" />
+    <Content Include="wp-content\uploads\woocommerce-speakers-2-150x150.png" />
+    <Content Include="wp-content\uploads\woocommerce-speakers-2-300x300.png" />
+    <Content Include="wp-content\uploads\woocommerce-speakers-2.png" />
+    <Content Include="wp-content\uploads\woocommerce-speakers-300x300.png" />
+    <Content Include="wp-content\uploads\woocommerce-speakers.png" />
+    <Content Include="wp-content\uploads\woocommerce-tablet-150x150.png" />
+    <Content Include="wp-content\uploads\woocommerce-tablet-300x300.png" />
+    <Content Include="wp-content\uploads\woocommerce-tablet.png" />
+    <Content Include="wp-content\uploads\wpcu3er\jquery.cu3er7e2e.js" />
+    <Content Include="wp-includes\js\comment-reply5152.js" />
+    <Content Include="wp-includes\js\jquery\jquery-migrate.min1576.js" />
+    <Content Include="wp-includes\js\jquery\jquery3e5a.js" />
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.accordion.mindb08.js" />
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.core.mindb08.js" />
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.tabs.mindb08.js" />
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.widget.mindb08.js" />
+    <Content Include="wp-includes\js\swfobjecteb77.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <Content Include="Views\_viewstart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="wp-content\plugins\revslider\rs-plugin\font\revicons90c6.eot" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\font\revicons90c6.ttf" />
+    <Content Include="wp-content\plugins\revslider\rs-plugin\font\revicons90c6.woff" />
+    <Content Include="wp-content\plugins\woocommerce\assets\fonts\WooCommerce.eot" />
+    <Content Include="wp-content\plugins\woocommerce\assets\fonts\WooCommerce.ttf" />
+    <Content Include="wp-content\plugins\woocommerce\assets\fonts\WooCommerce.woff" />
+    <Content Include="wp-content\plugins\woocommerce\assets\fonts\WooCommerced41d.eot" />
+    <Content Include="wp-content\themes\Karma\css\fonts\fontawesome-webfontba72.eot" />
+    <Content Include="wp-content\themes\Karma\css\fonts\fontawesome-webfontba72.woff" />
+    <Content Include="wp-content\themes\Karma\css\fonts\fontawesome-webfontd41d.eot" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>29064</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:29064/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

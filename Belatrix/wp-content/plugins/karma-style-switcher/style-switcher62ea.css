@@ -1,0 +1,128 @@
+@media screen and (max-width: 768px) {
+#truethemes-styling-preview,
+#truethemes-styling-preview #container {
+	display: none !important;
+}  
+}
+
+#truethemes-styling-preview {
+	width: 280px;
+	position: absolute;
+	right: 0;
+	top: 20px;
+	z-index: 1000;
+	display: block;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+#container {
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	box-shadow: 0 2px 9px 2px rgba(0,0,0,0.20);
+	display: hidden;
+	background: #fff;
+}
+
+.style-title {
+	color: #FFF;
+	font-size: 15px;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	border-bottom: 1px solid rgba(23,24,26,0.15);
+	background-image: linear-gradient(to bottom, #555555, #333333);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#555555', endColorstr='#333333');
+}
+
+#truethemes-styling-preview p {
+	margin-bottom: 10px;
+}
+
+.style-info {
+	font-size: 12px;
+	padding: 5px 15px;
+}
+
+.style-switch-section-title {
+	color: #000;
+	font-size: 15px;
+	line-height: 44px;
+	text-align: center;
+}
+
+.style-switch-section {
+	padding: 15px 0;
+	border-top: 1px solid rgba(23,24,26,0.08);
+	background-image: linear-gradient(to bottom, #F7F4F4, #FFFFFF);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#F7F4F4', endColorstr='#FFFFFF');
+}
+
+.option-title {
+	font-size: 12px;
+	height: auto;
+	line-height: 18px;
+	padding: 12px 0;
+	text-align: center;
+	border-bottom: 1px solid rgba(23,24,26,0.15);
+}
+
+#truethemes-styling-preview .images {
+	width: 235px;
+	padding-left: 25px;
+	position: relative;
+	z-index: 1000000;
+}
+
+#truethemes-styling-preview .images img {
+	width: 25px;
+	height: 24px;
+	margin: 0 7px 7px 0;
+	z-index: 1000;
+}
+
+#truethemes-styling-preview .images img.active {
+	border: 0 solid #ccc;
+	opacity: 0.5;
+}
+
+.style-switch-input {
+	padding-left: 80px;
+	margin-top: -5px;
+	margin-bottom: 10px;
+}
+
+.style-switch-input select {
+	width: 120px;
+}
+
+#truethemes-styling-preview .toggle-button {
+	width: 35px;
+	height: 43px;
+	background: url(images/toggle-button.png);
+	cursor: pointer;
+}
+
+#truethemes-styling-preview .close {
+	background-position: top left;
+	position: absolute;
+	top: 45px;
+	right: 0px;
+	width: 35px;
+}
+
+#truethemes-styling-preview .open {
+	background-position: bottom left;;
+	position: absolute;
+	top: 45px;
+	right: 0;
+	width: 35px;
+}
+
+#truethemes-styling-preview .open i.fa-cog {
+	color:#ffffff;
+	font-size:18px;
+	left:6px;
+	position:absolute;
+	top: 12px;
+}
